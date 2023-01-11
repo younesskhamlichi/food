@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Food API</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <img src="image/logo1.jpg" alt="image" width="60">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!--links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index1.html" target="_blank">Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index2.html" target="_blank"> Get recipes</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <main>
+        <section>
+            
+            <form class="d-flex">
+                <input class="form-control me-2 mb-5" type="search" id="searchInput" placeholder="Search your food..."
+                aria-label="Search">
+                <button class="btn btn-success h-25" id="searchBtn" type="submit" type="button" class="btn btn-success">Search</button>
+            </form>
+        </section>
+        <section class=" container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4 h-50 mx-4" id="data">
+                <!-- file javascript -->
+                <!-- <tr><td colspan="4"><i>Loading...</i></td></tr> -->
+            </div>
+            <div class="mt-5">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <button class="page-link mx-2" id="prevButton">Prévious</button>
+                    </li>
+                    <li class="page-item">
+                        <button class="page-link" id="nextButton">Next</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Modal -->
+        <!-- <div class="modal fade" style="z-index: 1050" class="modal-backdrop fade show"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >  -->
+            <!-- javascript modal -->
+         <!-- </div> -->
+
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal Info</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="Modal">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- <div id="test" class="w3-container">
+
+        </div> -->
+    </main>
+
+    
+
+
+    
+
+
+
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script> 
+    <script src="script1.js"></script>
+</body>
+
+</html>
